@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="player">
+      <video muted src="https://joy.videvo.net/videvo_files/video/free/2021-04/large_watermarked/210329_01B_Bali_1080p_009_preview.mp4" step="1" loop></video>
+      <div class="player-overline">
+        <h2 class="player-title">Probando botones en video</h2>
+        <div class="player-actions">
+          <button class="button" id="forward"  aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos" hidden></button>
+          <button class="button" id="play" aria-label="Reproducifa-rotate-180" title="Reproducifa-rotate-180"></button>
+          <button class="button" id="pause" aria-label="Pausar" title="Pausar" hidden></button>
+          <button class="button" id="backward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos" hidden></button>
+        </div>
+        <div class="player-progress">
+          <input id="range" type="range" min="0" value="0">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="./js/index.js"></script>
+</body>
+</html>

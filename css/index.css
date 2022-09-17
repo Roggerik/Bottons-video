@@ -1,0 +1,78 @@
+:root {
+  --Primary: #43DDE6;
+  --White: #ffffff;  
+}
+
+body{
+  background: var(--Primary);
+
+}
+
+.wrapper{
+  max-inline-size: 900px;
+  margin: auto;
+}
+.player{
+  position: relative;
+}
+.player-title{
+  color:var(--Primary);
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  font-size: 18px;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+}
+
+.player-actions{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player video{
+  inline-size: 100%;
+}
+
+.button{
+  inline-size: 32px;
+  block-size: 32px;
+  cursor: pointer;
+  border: none;
+}
+#play{
+  background: url('../icons/icons8-circled_play\ 1.svg');
+}
+
+#pause{
+  background: url('../icons/icons8-pause_button\ 1.svg');
+}
+
+#backward{
+  background: url('../icons/icons8-reset\ 1.svg');
+}
+
+#forward{
+  background: url('../icons/icons8-reset\ 2.svg');
+}
+
+.player-progress{
+  position: absolute;
+  inset-block-end:0;
+  inset-inline: 0;
+  display:flex;
+  padding: 10px;
+}
+.player-overline{
+  opacity: 0;
+  transition: .5s opacity ease-in-out;
+}
+.player-overline:hover{
+  opacity: 1;
+}
+.player-progress input{
+  flex: 1;
+  outline: none;
+}
